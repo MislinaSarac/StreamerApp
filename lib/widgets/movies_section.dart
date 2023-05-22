@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:movie_stream/screens/movie_screen.dart';
 
 class MoviesSection extends StatelessWidget {
   MoviesSection({super.key});
@@ -31,7 +32,11 @@ class MoviesSection extends StatelessWidget {
             for (int i = 0; i < images.length; i++)
               InkWell(
                 onTap: () {
-                  //Navigator.push(context, route),
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MovieScreen(images[i])));
+                  // Navigator.push(context, MaterialPageRoute(builder = context)=> MovieScreen(images[i]));
                 },
                 child: Container(
                   margin: const EdgeInsets.all(6),
