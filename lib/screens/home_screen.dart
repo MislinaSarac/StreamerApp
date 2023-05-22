@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:movie_stream/screens/custom_drawer.dart';
 import 'package:movie_stream/widgets/movies_section.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -29,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         title: Text('My Movies'),
         actions: const [
@@ -37,10 +38,6 @@ class _HomeScreenState extends State<HomeScreen>
             padding: EdgeInsets.only(right: 15),
             child: Icon(Icons.search),
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: Icon(Icons.notifications),
-          )
         ],
         leadingWidth: 50,
       ),

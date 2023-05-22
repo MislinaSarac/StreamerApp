@@ -13,13 +13,12 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   @override
-  void initState() {
-    super.initState();
-    Timer(Duration(seconds: 1), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
-    });
-  }
+  // void initState() {
+  //   super.initState();
+  //   Timer(Duration(seconds: 1), () {
+  //     Navigator.push(
+  //         context, MaterialPageRoute(builder: (context) => HomeScreen()));
+  //   });}
 
   @override
   Widget build(BuildContext context) {
@@ -97,12 +96,20 @@ class _LoginPageState extends State<LoginPage> {
                               //         builder: (context) => MoviesSection(),
                               //       ));
                               // },
-                              child: Text(
-                                "Login in",
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 20,
-                                    fontStyle: FontStyle.italic),
+                              child: Container(
+                                child: InkWell(
+                                  child: Text(
+                                    "Login in",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontStyle: FontStyle.italic),
+                                  ),
+                                  onTap: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => HomeScreen())),
+                                ),
                               ),
                             ),
                           ),

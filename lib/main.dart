@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_stream/screens/login_paga.dart';
+import 'package:movie_stream/screens/login_page.dart';
 import 'package:movie_stream/screens/splash_screen.dart';
 
 void main() {
@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: const Color(0xFF1D1D28),
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-          ),
-          ),
+        scaffoldBackgroundColor: const Color(0xFF1D1D28),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+      ),
       home: LoginPage(),
     );
   }
