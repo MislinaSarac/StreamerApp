@@ -38,11 +38,11 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Text(
             'Movies-my'.toUpperCase(),
             style: Theme.of(context).textTheme.caption?.copyWith(
-                  color: Colors.white,
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
-                ),
+                color: Colors.red.shade900,
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
+                fontFamily: 'times'),
           ),
         ),
       ),

@@ -36,6 +36,10 @@ class _HomeScreenState extends State<HomeScreen>
           Padding(
             padding: EdgeInsets.only(right: 15),
             child: Icon(Icons.search),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 15),
+            child: Icon(Icons.notifications),
           )
         ],
         leadingWidth: 50,
@@ -88,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen>
             unselectedLabelColor: Colors.white.withOpacity(0.5),
             isScrollable: true,
             indicator: BoxDecoration(
-              color: Colors.red,
+              color: Colors.red.shade900,
               borderRadius: BorderRadius.circular(10),
             ),
             labelStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
@@ -104,10 +108,11 @@ class _HomeScreenState extends State<HomeScreen>
           SizedBox(height: 20),
           Center(
             child: [
-             MoviesSection(),
-              Container(),
-              Container(),
-              Container(),
+              MoviesSection(),
+              MoviesSection(),
+              MoviesSection(),
+              MoviesSection(),
+              MoviesSection(),
             ][_tabController.index],
           ),
         ],

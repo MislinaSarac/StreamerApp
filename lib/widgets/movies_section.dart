@@ -10,6 +10,7 @@ class MoviesSection extends StatelessWidget {
     'Avatar 2',
     'Black Panther2',
     'Black Adam',
+    'Dune'
   ];
 
   @override
