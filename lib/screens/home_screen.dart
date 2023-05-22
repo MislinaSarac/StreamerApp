@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:movie_stream/widgets/movies_section.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -28,10 +29,10 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: const Drawer(),
       appBar: AppBar(
         title: Text('My Movies'),
-        actions: [
+        actions: const [
           Padding(
             padding: EdgeInsets.only(right: 15),
             child: Icon(Icons.search),
@@ -103,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen>
           SizedBox(height: 20),
           Center(
             child: [
-              Container(),
+             MoviesSection(),
               Container(),
               Container(),
               Container(),
