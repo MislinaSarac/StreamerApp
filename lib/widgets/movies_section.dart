@@ -98,7 +98,8 @@ class MoviesSection extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ]),
+                  ],
+                  ),
                 ),
               )
           ],
