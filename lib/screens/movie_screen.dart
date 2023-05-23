@@ -46,72 +46,74 @@ class MovieScreen extends StatelessWidget {
           SizedBox(height: 10),
           Padding(
             padding: EdgeInsets.all(8),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  image,
-                  style: TextStyle(
-                    color: Colors.red.shade900,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    image,
+                    style: TextStyle(
+                      color: Colors.red.shade900,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                SizedBox(height: 10),
-                Row(
-                  children: [
-                    Text(
-                      "PG-13",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                    SizedBox(width: 40),
-                    Text(
-                      "Action",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                    SizedBox(width: 40),
-                    Text(
-                      "2.15 Hours",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 10),
-                RatingBar.builder(
-                    initialRating: 3,
-                    minRating: 1,
-                    direction: Axis.horizontal,
-                    allowHalfRating: true,
-                    itemCount: 5,
-                    itemSize: 25,
-                    unratedColor: Colors.white,
-                    itemBuilder: (context, _) => Icon(
-                          Icons.star,
-                          color: Colors.amber,
+                  SizedBox(height: 10),
+                  Row(
+                    children:const [
+                      Text(
+                        "PG-13",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
                         ),
-                    onRatingUpdate: (rating) {}),
-                SizedBox(height: 20),
-                Text(
-                  "Long Live Wakanda is a new American superhero movie based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, the film is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
+                      ),
+                      SizedBox(width: 40),
+                      Text(
+                        "Action",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      SizedBox(width: 40),
+                      Text(
+                        "2.15 Hours",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
-                  textAlign: TextAlign.justify,
-                ),
-              ],
+                  SizedBox(height: 10),
+                  RatingBar.builder(
+                      initialRating: 3,
+                      minRating: 1,
+                      direction: Axis.horizontal,
+                      allowHalfRating: true,
+                      itemCount: 5,
+                      itemSize: 25,
+                      unratedColor: Colors.white,
+                      itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                          ),
+                      onRatingUpdate: (rating) {}),
+                  SizedBox(height: 20),
+                  Text(
+                    "Long Live Wakanda is a new American superhero movie based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, the film is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ],
+              ),
             ),
           )
         ],

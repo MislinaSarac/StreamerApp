@@ -60,7 +60,7 @@ class _LiveHomeState extends State<LiveHome> {
                       borderRadius: BorderRadius.circular(20),
                       borderSide: BorderSide(color: Colors.red),
                     ),
-                    hintText: 'User Name',
+                    hintText: 'Username',
                   ),
                 ),
               ),

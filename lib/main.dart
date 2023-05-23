@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             backgroundColor: Colors.transparent,
             elevation: 0,
-          ),
+          ), 
         ),
         home: LoginPage(),
       ),

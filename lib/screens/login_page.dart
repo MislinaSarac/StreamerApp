@@ -59,6 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                     customSizedBox(),
                     customSizedBox(),
                     TextField(
+                      obscureText: true,
                       decoration: _customInputDecoration("Password"),
                     ),
                     customSizedBox(),

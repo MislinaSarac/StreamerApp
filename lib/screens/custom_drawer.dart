@@ -68,10 +68,6 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   indent: 20,
                 ),
                 _draverItem(
-                    onTap: () {},
-                    iconData: CupertinoIcons.settings,
-                    title: "Settings"),
-                _draverItem(
                     onTap: () {}, iconData: CupertinoIcons.info, title: "Help"),
                 Container(
                   child: InkWell(
