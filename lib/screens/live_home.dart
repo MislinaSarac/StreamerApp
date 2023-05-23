@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_stream/screens/director.dart';
+import 'package:movie_stream/screens/home_screen.dart';
 import 'package:movie_stream/screens/participant.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -111,6 +112,24 @@ class _LiveHomeState extends State<LiveHome> {
                           TextStyle(fontSize: 20, color: Colors.red.shade900),
                     ),
                     Icon(Icons.cut),
+                  ],
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomeScreen(),
+                  ));
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Home  ',
+                      style:
+                          TextStyle(fontSize: 20, color: Colors.red.shade900),
+                    ),
+                    Icon(Icons.home),
                   ],
                 ),
               )

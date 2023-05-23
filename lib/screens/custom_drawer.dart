@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_stream/screens/home_screen.dart';
+import 'package:movie_stream/screens/live_home.dart';
 import 'package:movie_stream/screens/login_page.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -42,7 +43,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   child: InkWell(
                     // onTap: () => Navigator.pop(context),
                     child: _draverItem(
-                        onTap: () => Navigator.pop(context),
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LiveHome())),
                         iconData: Icons.live_tv,
                         title: "Live"),
                   ),
